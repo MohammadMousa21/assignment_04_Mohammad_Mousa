@@ -19,14 +19,24 @@ class Task:
     def is_completed(self):
         return self.completed
 while True:
-    print("\nTask Manager Menu:")
-    print("1. Add a new task")
-    print("2. Get a task from the queue given a task id")
-    print("3. Mark the highest priority task as completed")
-    print("4. Display all tasks in order of priority")
-    print("5. Display only the tasks that are not completed")
-    print("6. Display the last completed task")
-    print("7. Exit")
+    print("""
+1. Adding a new task to the task manager.
+2. Getting a task from the queue given a task id
+3. Marking the highest priority task as completed and putting
+it in the task history.
+4. Displaying all tasks in order of priority.
+5. Displaying only the tasks that are not completed.
+6. Displaying the last completed task.
+7. Exit
+""")
+    choice = int(input("Enter your choice (1-7): "))
+    if choice ==1:
+        description = input("Enter task description: ")
+        priority = int(input("Enter task priority (integer): "))
+        new_task = Task(description, priority)
+    elif choice == 7:
+        break
+
     
 
 
