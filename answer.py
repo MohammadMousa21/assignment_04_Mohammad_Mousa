@@ -16,6 +16,7 @@ class Task:
         return self.priority
     def is_completed(self):
         return self.completed
+                
 class PriorityQueue:
     def __init__(self):
         self.tasks = []
@@ -25,21 +26,25 @@ class PriorityQueue:
         elif for i in range(len(self.tasks)):
                if task.priority <= self.tasks[i]:
                   self.tasks.insert(i,task)
- def get_highest_priority_task(self):
+     def incompleted_tasks(self):
+        for i in range(len(self.tasks)
+            if tasks[i,"completed"] == True :
+                print(tasks[i])
+    def get_highest_priority_task(self):
         if self.tasks:
             return self.tasks[0]
         else:
             return None
-def remove_highest_priority_task(self):
+    def remove_highest_priority_task(self):
         if self.tasks:
             return self.tasks.pop(0)
         else:
             return None
-def display_all_tasks():
-    if not tasks:
-        print("no tasks found")
-    elif for i in range(len(self.tasks)):
-        print(tasks[i])
+    def display_all_tasks():
+       if not tasks:
+          print("no tasks found")
+       elif for i in range(len(self.tasks)):
+          print(tasks[i])
 
 class Stack:
     def __init__(self):
@@ -55,8 +60,6 @@ class Stack:
             return self.items.pop()
         else:
             return None
-    def incomplete_tasks(self):
-        for 
     
     
 
@@ -95,6 +98,7 @@ it in the task history.
     elif choice == 4:
        self.display_all_tasks()
     elif choice == 5:
+       self.incompleted_tasks()
         
         
         
