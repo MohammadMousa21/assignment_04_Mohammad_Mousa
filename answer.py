@@ -33,8 +33,10 @@ it in the task history.
         priority = int(input("Enter task priority (integer): "))
         new_task = Task(description, priority)
     elif choice == '2':
-                task_id = int(input("Enter task id: "))
-                task = self.get_description(task_id)
+        task_id = int(input("Enter task id: "))
+        task = self.get_description(task_id)
+        if task:
+            print("task id = "+task_id+" description= "+task+" priority= "+self.get_priority(task_id))
     elif choice == 7:
         break
 
