@@ -8,4 +8,7 @@ class Task:
         self.completed = False
     def mark_completed(self):
         self.completed = True
+    def get_task_id(self):
+        return self.task_id
 
+ 
