@@ -16,6 +16,27 @@ class Task:
         return self.priority
     def is_completed(self):
         return self.completed
+class PriorityQueue:
+    def __init__(self):
+        self.tasks = []
+    def add_task(self, task):
+        if task.priority >tasks[-1,"priority"]:
+            tasks.append(task)
+        elif for i in range(len(tasks)):
+               if task.priority <= tasks[i]:
+                  tasks.insert(i,task)
+ def get_highest_priority_task(self):
+        if self.tasks:
+            return self.tasks[0]
+        else:
+            return None
+def remove_highest_priority_task(self):
+        if self.tasks:
+            return self.tasks.pop(0)
+        else:
+            return None
+        
+                
 while True:
     print("""
 1. Adding a new task to the task manager.
@@ -32,11 +53,13 @@ it in the task history.
         description = input("Enter task description: ")
         priority = int(input("Enter task priority (integer): "))
         new_task = Task(description, priority)
+        
     elif choice == '2':
         task_id = int(input("Enter task id: "))
         task = self.get_description(task_id)
         if task:
             print("task id = "+task_id+" description= "+task+" priority= "+self.get_priority(task_id))
+    
     elif choice == 7:
         break
 
