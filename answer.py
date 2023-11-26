@@ -6,7 +6,7 @@ class Task:
         self.description = description
         self.priority = priority
         self.completed = False
-    def mark_completed(self):
+    def set_mark_completed(self):
         self.completed = True
     def get_task_id(self):
         return self.task_id
@@ -16,6 +16,8 @@ class Task:
         return self.priority
     def get_priority(self):
         return self.priority
+    def is_completed(self):
+        return self.completed
 
 
  
