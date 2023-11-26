@@ -12,6 +12,8 @@ class Task:
         return self.task_id
     def get_description(self):
         return self.description
+    def get_priority(self):
+        return self.priority
     
 
 
