@@ -10,5 +10,9 @@ class Task:
         self.completed = True
     def get_task_id(self):
         return self.task_id
+    def get_description(self):
+        return self.description
+    
+
 
  
