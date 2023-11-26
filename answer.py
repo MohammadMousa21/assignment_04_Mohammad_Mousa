@@ -35,18 +35,29 @@ def remove_highest_priority_task(self):
             return self.tasks.pop(0)
         else:
             return None
+def display_all_tasks():
+    if not tasks:
+        print("no tasks found")
+    elif for i in range(len(self.tasks)):
+        print(tasks[i])
+
 class Stack:
     def __init__(self):
         self.items = []
     def is_empty(self):
         return len(self.items) == 0
     def add(self, item):
+        for i in range(len(self.tasks))
+        
         self.items.append(item)
     def pop(self):
         if not self.is_empty():
             return self.items.pop()
         else:
             return None
+    def incomplete_tasks(self):
+        for 
+    
     
 
         
@@ -75,11 +86,17 @@ it in the task history.
         if task:
             print("task id = "+task_id+" description= "+task+" priority= "+self.get_priority(task_id))
     elif choice == 3:
-       completed_task= self.get_highest_priority_task()
-        add(completed_task)
-        print("you have finished "+ completed_task)
+       completed_task= self.remove_highest_priority_task()
+        if completed_task:
+          add(completed_task)
+          print("you have finished "+ completed_task)
+          set_completed_task(completed_task)
+        
     elif choice == 4:
        self.display_all_tasks()
+    elif choice == 5:
+        
+        
         
     elif choice == 7:
         break
