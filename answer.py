@@ -14,7 +14,8 @@ class Task:
         return self.description
     def get_priority(self):
         return self.priority
-    
+    def get_priority(self):
+        return self.priority
 
 
  
