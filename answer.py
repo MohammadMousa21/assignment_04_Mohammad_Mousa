@@ -53,13 +53,8 @@ class Stack:
         return len(self.items) == 0
     def add(self, item):
         for i in range(len(self.tasks))
-        
-        self.items.append(item)
-    def pop(self):
-        if not self.is_empty():
-            return self.items.pop()
-        else:
-            return None
+           self.items.append(item)
+
     
     
 
@@ -93,15 +88,13 @@ it in the task history.
         if completed_task:
           add(completed_task)
           print("you have finished "+ completed_task)
-          set_completed_task(completed_task)
-        
+          set_completed_task(completed_task) 
     elif choice == 4:
        self.display_all_tasks()
     elif choice == 5:
        self.incompleted_tasks()
-        
-        
-        
+    elif choice == 6:
+       self.items[-1]
     elif choice == 7:
         break
 
