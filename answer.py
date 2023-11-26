@@ -14,8 +14,6 @@ class Task:
         return self.description
     def get_priority(self):
         return self.priority
-    def get_priority(self):
-        return self.priority
     def is_completed(self):
         return self.completed
 while True:
@@ -34,6 +32,9 @@ it in the task history.
         description = input("Enter task description: ")
         priority = int(input("Enter task priority (integer): "))
         new_task = Task(description, priority)
+    elif choice == '2':
+                task_id = int(input("Enter task id: "))
+                task = self.get_description(task_id)
     elif choice == 7:
         break
 
